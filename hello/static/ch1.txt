@@ -1,0 +1,73 @@
+1. Django Kya Hai?
+Django Python ka ek Web Framework hai.
+
+Batteries Included: Iska matlab tumhe user login, database handling, security ke liye alag se code nahi likhna padta. Sab bana-banaya milta hai.
+
+Secure & Scalable: Isse choti website se lekar Instagram jaisi badi apps bhi banayi ja sakti hain.
+
+2. Project vs. App (Sabse Important)
+Bohot log isme confuse hote hain.
+
+Project: Ye tumhara Pura Ghar (House) hai. (Example: hello folder). Isme poori website ki settings hoti hain.
+
+App: Ye us ghar ke Kamre (Rooms) hain. (Example: home, payments, users).
+
+Ek Project mein multiple Apps ho sakte hain.
+
+Har App ka ek specific kaam hota hai (Login app alag, Blog app alag).
+
+3. MVT Architecture (Django ka Dil ❤️)
+Django MVT pattern par kaam karta hai. Isse yaad rakhna:
+
+M - Model (Database):
+
+Ye data handle karta hai.
+
+Socho ye Godown/Store Room hai jahan sab samaan (data) rakha hai.
+
+File: models.py
+
+V - View (Logic/Manager):
+
+Ye Manager/Waiter hai.
+
+Ye decide karta hai ki user ne kya maanga hai aur database se kya lana hai.
+
+File: views.py
+
+T - Template (Frontend/Presentation):
+
+Ye Presentation Plate hai.
+
+User ko website kaisi dikhegi (HTML design).
+
+Folder: templates/
+
+Flow: User maangta hai -> View sunta hai -> Model se data leta hai -> Template mein sajata hai -> User ko dikhata hai.
+
+4. URL Routing (Rasta Dikhane Wala)
+Jab user browser mein google.com/about likhta hai, toh Django ko kaise pata chalta hai kya dikhana hai?
+
+urls.py: Ye website ka Receptionist hai.
+
+Iske paas ek list hoti hai: "Agar user '/about' bole, toh 'about_view' wala function chala do."
+
+5. Static Files (Sajawat)
+Ye wo files hain jo Server side par change nahi hoti.
+
+CSS: Rang-roop (Colors, Style).
+
+Images: Logos, Background photos.
+
+JavaScript: Animations.
+
+Bina static files ke website "khandar" jaisi dikhti hai.
+
+6. Important Files ka Quick Recap
+manage.py: Project ka Remote Control. (Server start karna, app banana sab isse hota hai).
+
+settings.py: Project ki Settings (Database kaunsa hai? Kaunse apps install hain? Language kya hai?).
+
+admin.py: Admin panel mein kya dikhana hai, wo yahan register karte hain.
+
+Summary Flow (Yaad karne ke liye): Browser Request -> urls.py (Rasta) -> views.py (Logic) -> templates (HTML) -> Wapas Browser Response.
